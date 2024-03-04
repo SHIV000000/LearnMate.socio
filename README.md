@@ -16,39 +16,48 @@ cd LearnMate
 
 ```
 
---> Create a virtual environment :
+### Create a virtual environment :
+
+On macOS/Linux:
+   ```bash
+
+   python3 -m venv venv
+   ```
+ On Windows:
+   ```bash
+   python -m venv venv
+   ```
+
+### Activate the Virtual Environment:
+
+#### For macOS/Linux:
+
 ```bash
-# Let's install virtualenv first
-pip install virtualenv
+source venv/bin/activate
+ ```
 
-# Then we create our virtual environment
-virtualenv env
+### Activate the Virtual Environment:
 
+#### For Windows:
+
+```bash
+.\venv\Scripts\activate
 ```
 
---> Activate the virtual environment :
-```bash
-env\scripts\activate
-
-```
-
---> Install the requirements :
+##  Install the requirements :
 ```bash
 pip install -r requirements.txt
 
 ```
-
-#
 
 ### Running the App
 
 --> To run the App, we use :
 ```bash
 python manage.py runserver
-
 ```
 
-> ⚠ Then, the development server will be started at http://127.0.0.1:8000/
+### the development server will be started at http://127.0.0.1:8000/
 
 
 
